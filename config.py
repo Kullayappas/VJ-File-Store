@@ -31,11 +31,11 @@ PORT = environ.get("PORT", "8080")
 CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
 
 # If Clone Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
+CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://kullayappabusiness:5UYVI9wf9sghqAx2@cluster0.9he7w.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 CDB_NAME = environ.get("CDB_NAME", "wingteamowner")
 
 # Database Information
-DB_URI = environ.get("DB_URI", "")
+DB_URI = environ.get("DB_URI", "mongodb+srv://kullayappabusiness:5UYVI9wf9sghqAx2@cluster0.9he7w.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = environ.get("DB_NAME", "Wingteamowner")
 
 # Auto Delete Information
@@ -46,7 +46,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002447116986"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
